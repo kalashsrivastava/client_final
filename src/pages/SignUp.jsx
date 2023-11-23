@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import ContextAuthModal from "../components/modals/ContextAuthModal";
 import { RxCross1 } from "react-icons/rx";
 import ButtonLoadingSpinner from "../components/loader/ButtonLoadingSpinner";
-import Logo from "../assets/SafeSpace.png";
+import Logo from "../assets/SocialEcho.png";
 
 const SignUpNew = () => {
   const [loading, setLoading] = useState(false);
@@ -29,7 +29,7 @@ const SignUpNew = () => {
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
 
-    if (e.target.value.includes("mod.safespace.com")) {
+    if (e.target.value.includes("mod.socialecho.com")) {
       setIsModerator(true);
     } else {
       setIsModerator(false);
