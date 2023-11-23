@@ -29,11 +29,7 @@ const SignUpNew = () => {
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
 
-    if (e.target.value.includes("mod.safespace.com")) {
-      setIsModerator(true);
-    } else {
-      setIsModerator(false);
-    }
+    
   };
 
   const handlePasswordChange = (e) => {
@@ -65,7 +61,7 @@ const SignUpNew = () => {
 
   const [isConsentGiven, setIsConsentGiven] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isModerator, setIsModerator] = useState(false);
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -277,7 +273,7 @@ const SignUpNew = () => {
             </button>
 
             <div onClick={() => setIsModalOpen(true)} className="mt-6">
-              {isConsentGiven && !isModerator ? (
+              {isConsentGiven  ? (
                 <p className="mt-2 cursor-pointer rounded-lg border border-green-500 px-4 py-3 text-center text-sm font-semibold text-green-600">
                   Context-Based Authentication is enabled
                 </p>
@@ -293,7 +289,6 @@ const SignUpNew = () => {
                 isModalOpen={isModalOpen}
                 setIsModalOpen={setIsModalOpen}
                 setIsConsentGiven={setIsConsentGiven}
-                isModerator={isModerator}
               />
             </div>
           </div>
