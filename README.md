@@ -36,5 +36,3 @@ Start the server first
 - 🧘 **Judgment-Free Interaction** — No likes, no followers — just real conversations in safe, private spaces.
 - 📌 **Future Enhancement** — Integration of certified therapists to offer live, professional support.
 
-## 📁 Folder Structure
-
