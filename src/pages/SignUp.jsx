@@ -7,6 +7,7 @@ import ContextAuthModal from "../components/modals/ContextAuthModal";
 import { RxCross1 } from "react-icons/rx";
 import ButtonLoadingSpinner from "../components/loader/ButtonLoadingSpinner";
 import Logo from "../assets/SafeSpace.png";
+import bgimage from "../assets/home.jpg";
 
 const SignUpNew = () => {
   const [loading, setLoading] = useState(false);
@@ -92,9 +93,9 @@ const SignUpNew = () => {
   };
 
   return (
-    <section className="bg-white">
+    <section className="bg-white" style={{ backgroundImage: `url(${bgimage})` , backgroundSize: "85% 100%", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
       <div className="container mx-auto flex min-h-screen items-center justify-center px-6">
-        <form className="w-full max-w-md" onSubmit={handleSubmit}>
+        <form className="w-full max-w-md backdrop-blur-lg pr-5 pl-5 pt-5 pb-5" onSubmit={handleSubmit}>
           <div className="mx-auto flex justify-center">
             <img className="h-7 w-auto sm:h-8" src={Logo} alt="" />
           </div>

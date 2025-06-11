@@ -3,8 +3,13 @@ import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import AppContainer from "./AppContainer";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
   <BrowserRouter>
-    <AppContainer />
+    <>
+      <AppContainer />
+    </>
   </BrowserRouter>
 );
